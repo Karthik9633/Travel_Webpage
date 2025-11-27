@@ -464,5 +464,32 @@ textarea {
 .contact_btn-2 {
     background-color: var(--color-gray);
     color: #fff;
-    font-size: 16px;}
+    font-size: 16px;
+}
 
+/* footer section css codes */
+
+.footer {
+    background-color: #151515;
+    width: 100%;
+    padding-inline: 3%;
+    padding-block: 1rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+.footer_menu,p{
+    list-style: none;
+    margin-top: 16px;
+}
+.footer_menu li a{
+    color: var(--color-gray);
+    font-weight: 400;
+}
+
+.footer_copyright{
+    grid-column: span 3;
+    text-align: center;
+    color: var(--color-gray);
+}
