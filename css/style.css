@@ -27,12 +27,14 @@ a {
     padding-inline: 5%;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 75px;
     z-index: 10;
+    background-color: white;
 
 }
+
 .header_title {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .header_title span {
@@ -58,7 +60,7 @@ a {
 
 .header_nav li a {
     font-weight: 500;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: 0.3s;
     font-size: 18px;
 }
@@ -76,13 +78,11 @@ a {
     padding-top: 100px;
     color: white;
     max-width: 100%;
-
-
 }
 
 button {
-    padding-inline: 1rem;
-    padding-block: 0.5rem;
+    padding-inline: 16px;
+    padding-block: 8px;
     border-radius: 99px;
     background: var(--color-primary);
     color: white;
@@ -105,7 +105,7 @@ section {
     max-width: 2000px;
     margin: auto;
     position: relative;
-    scroll-margin: 30px;
+    scroll-margin: 80px;
 }
 
 .title span {
@@ -138,7 +138,7 @@ section {
 .home_cards .home_card {
     min-width: 200px;
     height: 250px;
-    border-radius:20px;
+    border-radius: 20px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -174,19 +174,21 @@ section {
     background: url(../images/padpanapha\ temple.jpg);
 
 }
+
 /* about section css codes */
-#about{
+#about {
     margin-top: 150px;
 }
 
-.about_cards{
+.about_cards {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
 
 }
-.about_cards .about_card{
- 
+
+.about_cards .about_card {
+
     width: 200px;
     height: 250px;
     border-radius: 20px;
@@ -196,28 +198,107 @@ section {
 
 }
 
-.about_card-1{
+.about_card-1 {
     background: url("/images/Kovalam.jpg");
 }
-.about_card-2{
+
+.about_card-2 {
     background: url("/images/ponmudi.jpg");
     grid-row: span 2;
     align-self: center;
 }
-.about_card-3{
+
+.about_card-3 {
     background: url("/images/padpanapha\ temple.jpg");
 }
+
 .about_title span {
     color: var(--color-primary);
 }
-.about_btns{
+
+.about_btns {
     display: flex;
     margin-top: 10px;
     gap: 10px;
+    flex-wrap: wrap;
 }
-.about_btn-2{
+
+.about_btn-2 {
     background: white;
     color: var(--color-primary);
     border: solid 1px var(--color-primary);
 
+}
+
+/* desitination section css code */
+#destination {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.destination_content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination_cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.destination_cards .destination_card {
+    width: 350px;
+    height: 450px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.destination_card-1{
+    background-image: url("../images/Kovalam.jpg");
+
+}
+
+.destination_card-2{
+    background-image: url("../images/ponmudi.jpg");
+
+}
+.destination_card-3{
+    background-image: url("../images/neyyar\ dam.jpg");
+
+}
+.card_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.destination_card:hover .card_overlay {
+    opacity: 1;
 }
