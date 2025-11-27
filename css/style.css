@@ -454,6 +454,7 @@ textarea {
 .form-buttons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -533,4 +534,139 @@ button:hover,
 .about_btn-2:hover {
     color: white;
     background-color: var(--color-primary);
+}
+
+/* responsive code */
+
+@media (max-width: 768px) {
+
+    .header_nav {
+        display: none;
+    }
+
+    .header {
+        padding-inline: 3%;
+        height: 65px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .home_content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home_cards {
+        grid-template-columns: 1fr;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_title {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .about_cards {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 15px;
+        width: 100%;
+        order: 1;
+    }
+
+    .about_cards .about_card {
+        width: 90%;
+        height: 260px;
+    }
+
+    .about_btns {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 320px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer_copyright {
+        grid-column: span 1;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .header {
+        padding-inline: 3%;
+    }
+    .header_nav li a {
+        font-size: 16px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .home_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about_cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .row {
+        gap: 15px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer_copyright {
+        grid-column: span 2;
+    }
 }
