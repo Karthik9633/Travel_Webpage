@@ -158,7 +158,7 @@ section {
 }
 
 .home_card-1 {
-    background: url(../images/Kovalam.jpg);
+    background: url("../images/Kovalam.jpg");
     grid-row: span 2;
     align-self: center;
 
@@ -166,12 +166,12 @@ section {
 }
 
 .home_card-2 {
-    background: url(../images/ponmudi.jpg);
+    background: url("../images/ponmudi.jpg");
 
 }
 
 .home_card-3 {
-    background: url(../images/padpanapha\ temple.jpg);
+    background: url("../images/padpanapha\ temple.jpg");
 
 }
 
@@ -199,17 +199,17 @@ section {
 }
 
 .about_card-1 {
-    background: url("/images/Kovalam.jpg");
+    background: url("../images/Kovalam.jpg");
 }
 
 .about_card-2 {
-    background: url("/images/ponmudi.jpg");
+    background: url("../images/ponmudi.jpg");
     grid-row: span 2;
     align-self: center;
 }
 
 .about_card-3 {
-    background: url("/images/padpanapha\ temple.jpg");
+    background: url("../images/padpanapha\ temple.jpg");
 }
 
 .about_title span {
