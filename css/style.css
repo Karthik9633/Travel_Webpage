@@ -32,6 +32,10 @@ a {
     background-color: white;
 
 }
+.header-hamburger{
+    display: none;
+}
+
 
 .header_title {
     color: rgb(0, 0, 0);
@@ -584,10 +588,28 @@ button:hover,
     }
 }
 
+
 @media (max-width: 768px) {
 
     .header_nav {
         display: none;
+    }
+    .header-hamburger{
+        display: block;
+        font-size: 30px;
+    }
+    .header_nav.active{
+        display:block;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        padding: 10px;
     }
 
     .header {
@@ -603,15 +625,17 @@ button:hover,
     }
 
     .home_cards {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         justify-items: center;
         gap: 15px;
         width: 100%;
     }
-     .home_cards .home_card {
+
+    .home_cards .home_card {
         width: 200px;
         height: 250px;
     }
+
     #about {
         display: flex;
         flex-direction: column;
